@@ -1,0 +1,125 @@
+% !TEX program = xelatex
+
+\documentclass{resume}
+%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{multicol}
+\usepackage{amsmath} % for "\text" macro
+\usepackage{ctex}
+\usepackage{setspace}
+
+
+\geometry{a4paper,left=1cm,right=1cm,top=1cm,bottom=0.4cm}
+\titlespacing{\section}{0pt}{*2.5}{*1.3}
+
+
+\begin{document}
+	\pagenumbering{gobble} % suppress displaying page number
+	
+	\begin{spacing}{1.0}
+		
+		
+		\name{Yu Sun}
+		
+		\basicInfo{
+			\email{ysun258@wisc.edu} \textperiodcentered\ 
+			\phone{(+1) 608-422-2239} \textperiodcentered\ 
+			\linkedin[yusunwisc]{https://www.linkedin.com/in/yusunwisc/}\textperiodcentered\
+			\github[YuSunwisc]{https://github.com/YuSunwisc}}
+		\vspace{-0.20in}
+		\section{\faGraduationCap\ Education}
+		\begin{minipage}[t]{0.33\textwidth}
+			\Large\textbf{Math PhD Candidate}
+			\small\begin{itemize}
+				\item University of Wisconsin Madison
+				\item Sep 2017-- expected Dec 2022 or May 2023
+				\item Advanced Stochastic Analysis, ML, DL, Bayesian Inference, Graph Theory, SPDE, PDE, Phylogeny
+			\end{itemize}
+		\end{minipage}
+		\begin{minipage}[t]{0.33\textwidth}
+			\Large\textbf{CS/Math Master}
+			\small\begin{itemize}
+				\item University of Wisconsin Madison
+				\item Sep 2020-- May 2022/ Sep 2016-- May 2017
+				\item CV, NLP, Ranking, Convex Analysis, Algorithm Design. Advanced Stochastic Analysis, Computational Math.
+			\end{itemize}
+		\end{minipage}
+		\begin{minipage}[t]{0.33\textwidth}
+			\Large\textbf{Math BS}
+			\small\begin{itemize}
+				\item Shanghai Jiao Tong University(上海交大)
+				%%    )
+				\item Sep 2012-- June 2016
+				\item Probability Theory, Computational Math, Statistics, Algorithm Design
+			\end{itemize}
+		\end{minipage}
+		
+		\vspace{-0.10in}
+		\section{\faUsers\ Internship Experience}
+		\datedsubsection{\textbf{Meta Instagram Reels - MLE intern} (Managers: Martin Wang, Boxuan Zhong) \hfill \qquad \quad May 2022 -- Aug 2022}{} 
+		\begin{itemize}
+			\item Set an end-to-end media relevance flow to detect anomaly, and improve final delivery quality. 
+			\item Set an end-to-end flow to increase the media sourcing pool based on clustering.
+			\item Build interactive data visualization and flow performance evaluation tool.
+		\end{itemize}
+		
+		\vspace{-0.20in}
+		
+		\section{\faInfo\ Technical Skills}
+		\begin{itemize}[parsep=0.5ex]
+			\item Programming Languages: Python, SQL, Matlab, R, C++.
+			\item Tools: Pytorch, Tenserflow, Jupyter, Pandas, Sklearn, Presto, Hive, Bash, Mercurial, Git.
+			\item Ranking, Bayesian Inference, CV, NLP, Predictive Modeling, Clustering, Complex Stochastic Analysis.
+		\end{itemize}
+		
+		\vspace{-0.20in}
+		
+		\section{\faTasks\ Research Experience}
+		\datedsubsection{\textbf{Machine Learning $\&$ Deep Learning} }{}
+		\begin{itemize}
+			\item \textbf{Community Detection} and \textbf{Semi-Supervised Learning} : Adapt recent developed tensor decomposition technology for Degree Correlated Block Model(DCBM) to semi-supervised learning, i.e. with extra matrix info about partial labeling. Provide a poly-$O(\log n)$ algorithm with consistency results. Quantify the impact of semi-supervised learning than supervised learning in community detection. \hfill Aug 2021 -- Present
+			%% \vspace{-0.20in}
+			\item \textbf{Few Shots Learning},   \textbf{Differential Privacy} and \textbf{Fairness}: Using few shots learning technique to reduce the model accuracy lose due to differential privacy, with theoretical guarantees on mild regularized condition, and empirical results with Reddit posts dataset. We also find a way to control the loss of  differential privacy and fairness loss concurrently, under some mild regularity condition. \hfill Sep 2021 -- Present
+		\end{itemize}
+		
+		\vspace{-0.20in}
+		
+		\datedsubsection{\textbf{Bioinformatic Algorithm Design}}{}
+		\begin{itemize}
+			\item \textbf{Distance Based Method}: Using internode distance to recover the network structure of phylogeny under network multispecies coalescent model. Also providing a poly-$O(\log n)$ algorithm with high probability to successfully reconstruct. This is the first distance based method proof in a phylogeny network. \hfill Nov 2020 -- Aug 2021
+			
+			
+			
+			\item \textbf{Quartets Based Method}: Derive a new algorithm with high probability reconstruct the specie tree with incomplete lineage sorting, with rigorous upper bound on sample complexity depends poly-logarithmically on number gene tree samples, proved by stochastic domination technique. This result improves the state of the art algorithms when species tree branch lengths are more evenly distributed. \hfill March 2021 -- Present
+		\end{itemize}
+		\vspace{-0.20in}
+		\datedsubsection{\textbf{Integrable Probability}}{}
+		
+		\begin{itemize}
+			\item \textbf{Right tail LDP rate function}: Calculate the right tail LDP rate function of free energy in Beta-Gamma directed polymer models.  This is the first summarized right tail LDP result in discrete KPZ universality class. \hfill May 2018 -- Dec 2019
+		\end{itemize}
+		
+		
+		
+		
+		\section{\faCogs\ ML $\&$ DL Project}
+		
+		\begin{itemize}
+			\item \textbf{NLP in phylogeny}: Use \textbf{Transformer} to solve the phylogeny sequence placement problem. Analyze how the attention mechanism performs better than traditional RNN in long sequence cases. Compare the effect of choosing different attention layers to reduce the computational cost. \hfill May 2021 -- Present
+			\vspace{0.05in}
+			
+			\item \textbf{Outlier Robust Learning}: Learn the distribution of Ising model with $\epsilon$-adversarially corruption. Give a poly-$O(\log (N))$ algorithm to reconstruct the almost identical distribution with high probability.    \hfill Feb 2021 -- May 2021
+			\vspace{0.05in} 
+			
+			\item \textbf{Clustering}: Using state of the art clustering algorithm AncestralClust on COVID-19 RNA sequences datasets provided by NCBI. Compare with other unsupervised clustering techniques, measured by evenness. \hfill  Jan 2021 -- May 2021
+			\vspace{0.05in}
+			
+			\item \textbf{Correlation detection}: Use alignment and slicing techniques to detect the correlation between gene sequences on large scale datasets. \hfill  Oct 2020 -- Dec 2020
+			
+			\vspace{0.05in}
+			
+			\item \textbf{Supervised Learning}: Use decision tree, random forest and logistic regression to predict whether an indigenous person that tested positive for COVID-19 would end up in the ICU. \hfill  Sep 2020 -- Dec 2020
+		\end{itemize}
+		
+	\end{spacing}
+\end{document}
